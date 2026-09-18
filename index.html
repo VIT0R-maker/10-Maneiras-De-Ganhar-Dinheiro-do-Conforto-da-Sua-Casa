@@ -1,61 +1,455 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>10 Formas de Ganhar Dinheiro</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>APEX LABS — Alta performance esportiva</title>
+<meta name="description" content="Programas de preparação física e mental para atletas que competem no limite. Protocolos individuais, acompanhamento de temporada e trabalho sob pressão real.">
 
-        .container {
-            max-width: 600px;
-            background: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
+<meta property="og:title" content="APEX LABS — Alta performance esportiva">
+<meta property="og:description" content="Programas de preparação física e mental para atletas que competem no limite.">
+<meta property="og:type" content="website">
 
-        h1 {
-            color: #0056b3;
-        }
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          obsidian: '#080808',  // fundo principal
+          charcoal: '#121212',  // quebras de seção
+          forest:   '#005C35',  // destaque primário
+          champion: '#D99B26',  // destaque secundário
+          ignite:   '#E0532B',  // energia / hover
+          smoke:    '#A0A0A0',  // texto secundário
+        },
+        fontFamily: {
+          display: ['"Playfair Display"', 'Georgia', 'serif'],
+          sans:    ['"Inter"', 'system-ui', 'sans-serif'],
+        },
+        maxWidth: { reading: '62ch' },
+      }
+    }
+  }
+</script>
 
-        p {
-            font-size: 1.2em;
-            line-height: 1.6;
-            margin: 20px 0;
-        }
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,900;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-        .cta {
-            background-color: #0056b3;
-            color: #fff;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1em;
-            transition: background-color 0.3s;
-        }
+<style>
+  html { scroll-behavior: smooth; }
+  body { background-color: #080808; }
 
-        .cta:hover {
-            background-color: #003d80;
-        }
-    </style>
+  /* Foco visível — requisito de acessibilidade por teclado */
+  a:focus-visible, button:focus-visible, input:focus-visible {
+    outline: 2px solid #D99B26;
+    outline-offset: 4px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { transition-duration: 0.01ms !important; }
+  }
+
+  /* Granulado global sutil — sustenta a textura cinematográfica em cima das cores chapadas */
+  .grain-layer::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.05;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  /* Sublinhado que cresce a partir da esquerda — usado na navegação */
+  .nav-link { position: relative; }
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0; bottom: -6px;
+    height: 1px; width: 0;
+    background-color: #E0532B;
+    transition: width 0.3s ease;
+  }
+  .nav-link:hover::after, .nav-link:focus-visible::after { width: 100%; }
+
+  /* Itálico do display usado como ênfase editorial nos títulos */
+  .display-em { font-style: italic; font-weight: 500; color: #D99B26; }
+</style>
 </head>
-<body>
-    <div class="container">
-        <h1>Ganhe Dinheiro Sem Sair de Casa!</h1>
-        <p>Você está prestes a fazer a melhor escolha da sua vida! Ao adquirir este e-book, você aprenderá 10 maneiras incríveis de ganhar dinheiro utilizando apenas seu celular. Descubra estratégias práticas, flexíveis e eficazes para transformar seu tempo em lucro e alcançar a independência financeira!</p>
-        <a href="https://pay.kiwify.com.br/NOL1ZhT" class="cta">Quero Aprender Agora!</a>
+
+<body class="bg-obsidian text-white font-sans antialiased">
+
+<!-- ============================================================
+     HEADER
+============================================================= -->
+<header class="fixed top-0 inset-x-0 z-50 bg-obsidian/70 backdrop-blur-md border-b border-white/5">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 h-20 flex items-center justify-between">
+
+    <a href="#topo" class="font-display text-xl sm:text-2xl tracking-tight shrink-0">
+      APEX LABS <span class="text-forest">//</span>
+    </a>
+
+    <nav class="hidden lg:flex items-center gap-10 text-sm text-smoke">
+      <a href="#manifesto" class="nav-link transition-colors duration-300 hover:text-white">Manifesto</a>
+      <a href="#programas" class="nav-link transition-colors duration-300 hover:text-white">Programas</a>
+      <a href="#legado"    class="nav-link transition-colors duration-300 hover:text-white">O Legado</a>
+      <a href="#unidade"   class="nav-link transition-colors duration-300 hover:text-white">Unidade</a>
+    </nav>
+
+    <div class="flex items-center gap-4">
+      <a href="#unidade"
+         class="hidden sm:inline-flex items-center border border-white/25 px-6 py-3 text-xs tracking-widest
+                transition-all duration-300 hover:bg-ignite hover:border-ignite hover:text-obsidian">
+        JUNTE-SE À ELITE
+      </a>
+      <button id="menu-btn" type="button" aria-label="Abrir menu" aria-expanded="false"
+              class="lg:hidden w-10 h-10 grid place-items-center border border-white/20
+                     transition-colors duration-300 hover:border-ignite">
+        <i class="fa-solid fa-bars text-sm"></i>
+      </button>
     </div>
+  </div>
+
+  <div id="menu" class="lg:hidden hidden border-t border-white/5 bg-obsidian">
+    <nav class="px-5 py-6 flex flex-col gap-5 text-smoke">
+      <a href="#manifesto" class="transition-colors duration-300 hover:text-white">Manifesto</a>
+      <a href="#programas" class="transition-colors duration-300 hover:text-white">Programas</a>
+      <a href="#legado"    class="transition-colors duration-300 hover:text-white">O Legado</a>
+      <a href="#unidade"   class="transition-colors duration-300 hover:text-white">Unidade</a>
+      <a href="#unidade" class="mt-2 border border-white/25 px-6 py-3 text-center text-xs tracking-widest
+                                transition-all duration-300 hover:bg-ignite hover:border-ignite hover:text-obsidian">
+        JUNTE-SE À ELITE
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main id="topo">
+
+  <!-- ============================================================
+       HERO
+  ============================================================= -->
+  <section class="relative min-h-[100svh] flex items-end overflow-hidden grain-layer">
+    <!-- SLOT DE IMAGEM 1 — trocar por fotografia própria/licenciada -->
+    <img src="assets/img/campanha-hero.svg" alt=""
+         class="absolute inset-0 w-full h-full object-cover" aria-hidden="true">
+    <div class="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/70 to-obsidian/20"></div>
+
+    <div class="relative max-w-7xl mx-auto w-full px-5 sm:px-8 pb-20 sm:pb-28 pt-32">
+      <p class="text-champion text-xs sm:text-sm tracking-[0.3em] mb-8">TEMPORADA 2026</p>
+
+      <h1 class="font-display text-5xl sm:text-7xl lg:text-8xl leading-[0.95] max-w-[18ch]">
+        O último vislumbre de ouro antes do <span class="display-em">silêncio.</span>
+      </h1>
+
+      <p class="mt-8 text-smoke text-lg sm:text-xl max-w-reading leading-relaxed">
+        Todo atleta conhece o instante em que o corpo pede para parar e a decisão ainda não foi
+        tomada. É esse intervalo que nós treinamos. O resto é consequência.
+      </p>
+
+      <div class="mt-12 flex flex-col sm:flex-row gap-4 sm:items-center">
+        <a href="#programas"
+           class="inline-flex items-center justify-center gap-3 bg-white text-obsidian px-10 py-5 text-sm tracking-widest
+                  transition-all duration-300 hover:bg-champion">
+          VER PROGRAMAS
+        </a>
+        <a href="#manifesto"
+           class="inline-flex items-center justify-center gap-3 border border-white/25 px-10 py-5 text-sm tracking-widest
+                  transition-all duration-300 hover:border-ignite hover:text-ignite">
+          LER O MANIFESTO
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       A MENTALIDADE
+  ============================================================= -->
+  <section id="manifesto" class="bg-charcoal py-24 sm:py-36">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-12 gap-12 lg:gap-20 items-center">
+
+      <div class="lg:col-span-7">
+        <h2 class="font-display text-4xl sm:text-5xl lg:text-6xl leading-tight">
+          Disciplina não é motivação.<br>
+          É o que <span class="display-em">sobra</span> quando ela acaba.
+        </h2>
+
+        <div class="mt-10 space-y-6 text-smoke text-lg leading-relaxed max-w-reading">
+          <p>
+            A diferença entre o atleta que chega e o que quase chega raramente está no talento.
+            Está na quinta repetição de uma terça-feira sem plateia, quando ninguém está medindo
+            e desistir não teria custo nenhum.
+          </p>
+          <p>
+            Trabalhamos com quem já entendeu isso. Não vendemos ânimo, não prometemos atalho
+            e não tratamos dor como troféu. Montamos protocolo, medimos o que importa e
+            ajustamos quando o corpo responde diferente do previsto.
+          </p>
+          <p class="text-white border-l-2 border-forest pl-6">
+            Obsessão pela excelência é um método, não um traço de personalidade.
+          </p>
+        </div>
+      </div>
+
+      <div class="lg:col-span-5">
+        <!-- SLOT DE IMAGEM 5 — retrato vertical -->
+        <img src="assets/img/campanha-mentalidade.svg" alt="Painel de campanha da Apex Labs"
+             class="w-full h-auto" loading="lazy">
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONQUISTAS E PROGRAMAS
+  ============================================================= -->
+  <section id="programas" class="py-24 sm:py-36">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+
+      <div class="grid lg:grid-cols-12 gap-12 lg:gap-20 items-center mb-20">
+        <div class="lg:col-span-6">
+          <!-- SLOT DE IMAGEM 2 -->
+          <img src="assets/img/campanha-conquistas.svg" alt="Painel de campanha da Apex Labs"
+               class="w-full h-auto" loading="lazy">
+        </div>
+        <div class="lg:col-span-6">
+          <h2 class="font-display text-4xl sm:text-5xl lg:text-6xl leading-tight">
+            Venceu os quatro.<br>
+            Continua com <span class="display-em">fome.</span>
+          </h2>
+          <p class="mt-8 text-smoke text-lg leading-relaxed max-w-reading">
+            O problema de ganhar tudo é que o mapa acaba. A partir daí, cada temporada é uma
+            decisão consciente de começar de novo — com o corpo mais velho e a régua mais alta.
+            Nossos programas existem para esse segundo ciclo.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-px bg-white/10 border border-white/10">
+
+        <article class="bg-obsidian p-10 lg:p-12 transition-colors duration-300 hover:bg-charcoal group">
+          <i class="fa-solid fa-heart-pulse text-forest text-2xl transition-colors duration-300 group-hover:text-ignite"></i>
+          <h3 class="font-display text-2xl mt-6">Protocolo Base</h3>
+          <p class="mt-4 text-smoke leading-relaxed">
+            Avaliação completa, correção de assimetrias e reconstrução da fundação física.
+            Para quem vem de lesão ou de temporada mal periodizada.
+          </p>
+          <p class="mt-8 text-xs tracking-widest text-white/50">12 SEMANAS · PRESENCIAL</p>
+        </article>
+
+        <article class="bg-obsidian p-10 lg:p-12 transition-colors duration-300 hover:bg-charcoal group">
+          <i class="fa-solid fa-brain text-forest text-2xl transition-colors duration-300 group-hover:text-ignite"></i>
+          <h3 class="font-display text-2xl mt-6">Câmara de Pressão</h3>
+          <p class="mt-4 text-smoke leading-relaxed">
+            Treino de decisão sob fadiga e ruído. Simulamos o cenário em que a técnica costuma
+            falhar para que ela deixe de falhar ali.
+          </p>
+          <p class="mt-8 text-xs tracking-widest text-white/50">8 SEMANAS · HÍBRIDO</p>
+        </article>
+
+        <article class="bg-obsidian p-10 lg:p-12 transition-colors duration-300 hover:bg-charcoal group">
+          <i class="fa-solid fa-trophy text-forest text-2xl transition-colors duration-300 group-hover:text-ignite"></i>
+          <h3 class="font-display text-2xl mt-6">Temporada Fechada</h3>
+          <p class="mt-4 text-smoke leading-relaxed">
+            Acompanhamento integral do ciclo competitivo: carga, viagem, recuperação e pico
+            planejado para a data que importa.
+          </p>
+          <p class="mt-8 text-xs tracking-widest text-white/50">ANUAL · VAGAS LIMITADAS</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       DIVISOR DE IMPACTO
+  ============================================================= -->
+  <section class="relative h-[60vh] min-h-[420px] flex items-center justify-center overflow-hidden grain-layer">
+    <!-- SLOT DE IMAGEM 3 -->
+    <img src="assets/img/campanha-desafio.svg" alt=""
+         class="absolute inset-0 w-full h-full object-cover" aria-hidden="true">
+    <div class="absolute inset-0 bg-obsidian/70"></div>
+
+    <div class="relative text-center px-5">
+      <h2 class="font-display text-4xl sm:text-6xl lg:text-7xl leading-tight max-w-[16ch] mx-auto">
+        Seu adversário desta temporada já <span class="display-em">treinou</span> hoje.
+      </h2>
+      <p class="mt-8 text-smoke text-lg">E ele não está esperando você estar pronto.</p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       O LEGADO
+  ============================================================= -->
+  <section id="legado" class="bg-charcoal py-24 sm:py-36">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+
+      <div class="grid lg:grid-cols-12 gap-12 lg:gap-20 items-center">
+        <div class="lg:col-span-7">
+          <!-- SLOT DE IMAGEM 4 -->
+          <img src="assets/img/campanha-legado.svg" alt="Painel de campanha da Apex Labs"
+               class="w-full h-auto" loading="lazy">
+        </div>
+
+        <div class="lg:col-span-5">
+          <h2 class="font-display text-4xl sm:text-5xl lg:text-6xl leading-tight">
+            Ninguém sobe<br>
+            <span class="display-em">sozinho.</span>
+          </h2>
+          <p class="mt-8 text-smoke text-lg leading-relaxed max-w-reading">
+            Toda marca pessoal tem um treinador que insistiu, um fisioterapeuta que segurou a
+            temporada e um grupo de treino que não deixou faltar. O legado é isso: o que fica
+            depois que o nome sai do placar.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-10 lg:gap-16 mt-24">
+
+        <figure>
+          <blockquote class="font-display text-2xl leading-snug">
+            Cheguei achando que precisava treinar mais. Saí treinando melhor, e a diferença
+            apareceu no terceiro set.
+          </blockquote>
+          <figcaption class="mt-6 text-sm text-smoke">
+            Marina Diniz <span class="text-white/30">·</span> tênis, 4 anos de acompanhamento
+          </figcaption>
+        </figure>
+
+        <figure>
+          <blockquote class="font-display text-2xl leading-snug">
+            Foi a primeira vez que alguém me mostrou o número em vez de me dar um discurso.
+          </blockquote>
+          <figcaption class="mt-6 text-sm text-smoke">
+            Rafael Okamoto <span class="text-white/30">·</span> atletismo, 800m
+          </figcaption>
+        </figure>
+
+        <figure>
+          <blockquote class="font-display text-2xl leading-snug">
+            Eles mudaram o plano três vezes na temporada. Era isso que eu precisava e ninguém
+            tinha coragem de fazer.
+          </blockquote>
+          <figcaption class="mt-6 text-sm text-smoke">
+            Beatriz Nunes <span class="text-white/30">·</span> técnica de rugby
+          </figcaption>
+        </figure>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================================================
+     FOOTER
+============================================================= -->
+<footer id="unidade" class="border-t border-white/10 py-20 sm:py-28">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+
+    <div class="grid lg:grid-cols-12 gap-14 lg:gap-20">
+
+      <div class="lg:col-span-6">
+        <h2 class="font-display text-3xl sm:text-4xl leading-tight max-w-lg">
+          Atualizações silenciosas, uma vez por mês.
+        </h2>
+        <p class="mt-5 text-smoke max-w-reading leading-relaxed">
+          Protocolos novos, vagas abertas e o que aprendemos na temporada. Sem newsletter
+          motivacional e sem e-mail toda semana.
+        </p>
+
+        <div class="mt-8 flex flex-col sm:flex-row gap-3 max-w-lg">
+          <label for="email" class="sr-only">Seu e-mail</label>
+          <input id="email" type="email" inputmode="email" placeholder="seu@email.com"
+                 class="flex-1 bg-transparent border border-white/20 px-5 py-4 text-white placeholder:text-white/30
+                        transition-colors duration-300 focus:border-champion outline-none">
+          <button id="signup" type="button"
+                  class="bg-white text-obsidian px-8 py-4 text-xs tracking-widest
+                         transition-all duration-300 hover:bg-champion">
+            INSCREVER
+          </button>
+        </div>
+        <p id="signup-msg" class="mt-3 text-sm h-5" role="status" aria-live="polite"></p>
+      </div>
+
+      <div class="lg:col-span-2">
+        <h3 class="text-sm text-white/90 mb-5">Navegação</h3>
+        <ul class="space-y-3 text-smoke text-sm">
+          <li><a href="#manifesto" class="transition-colors duration-300 hover:text-ignite">Manifesto</a></li>
+          <li><a href="#programas" class="transition-colors duration-300 hover:text-ignite">Programas</a></li>
+          <li><a href="#legado"    class="transition-colors duration-300 hover:text-ignite">O Legado</a></li>
+        </ul>
+      </div>
+
+      <div class="lg:col-span-2">
+        <h3 class="text-sm text-white/90 mb-5">Institucional</h3>
+        <ul class="space-y-3 text-smoke text-sm">
+          <li><a href="#" class="transition-colors duration-300 hover:text-ignite">Metodologia</a></li>
+          <li><a href="#" class="transition-colors duration-300 hover:text-ignite">Trabalhe conosco</a></li>
+          <li><a href="#" class="transition-colors duration-300 hover:text-ignite">Privacidade</a></li>
+        </ul>
+      </div>
+
+      <div class="lg:col-span-2">
+        <h3 class="text-sm text-white/90 mb-5">Contato</h3>
+        <div class="flex gap-5 text-lg text-smoke">
+          <a href="#" aria-label="Instagram" class="transition-colors duration-300 hover:text-ignite"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"   class="transition-colors duration-300 hover:text-ignite"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" aria-label="LinkedIn"  class="transition-colors duration-300 hover:text-ignite"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="mt-20 pt-8 border-t border-white/10 flex flex-col sm:flex-row justify-between gap-3 text-xs text-white/40">
+      <p>© <span id="ano">2026</span> Apex Labs. Todos os direitos reservados.</p>
+      <p>Alta performance esportiva · Brasil</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  /* Menu mobile */
+  const menuBtn = document.getElementById('menu-btn');
+  const menu = document.getElementById('menu');
+  menuBtn.addEventListener('click', () => {
+    const aberto = !menu.classList.contains('hidden');
+    menu.classList.toggle('hidden');
+    menuBtn.setAttribute('aria-expanded', String(!aberto));
+  });
+  menu.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      menu.classList.add('hidden');
+      menuBtn.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  /* Newsletter — validação local.
+     Não há backend: conectar a um serviço de e-mail antes de publicar. */
+  const campo = document.getElementById('email');
+  const botao = document.getElementById('signup');
+  const aviso = document.getElementById('signup-msg');
+
+  botao.addEventListener('click', () => {
+    const valor = campo.value.trim();
+    const valido = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(valor);
+
+    if (!valido) {
+      aviso.textContent = 'Confira o e-mail digitado.';
+      aviso.className = 'mt-3 text-sm h-5 text-ignite';
+      campo.focus();
+      return;
+    }
+    aviso.textContent = 'Pronto. Você entra na próxima lista.';
+    aviso.className = 'mt-3 text-sm h-5 text-champion';
+    campo.value = '';
+  });
+
+  document.getElementById('ano').textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
